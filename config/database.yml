@@ -6,7 +6,10 @@
 #
 default: &default
   adapter: postgresql
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  pool: <%= Figaro.env.RAILS_MAX_THREADS %>
+  host: <%= Figaro.env.DATABASE_HOST %>
+  password: <%= Figaro.env.DATABASE_PASSWORD %>
+  userame: <%= Figaro.env.DATABASE_USERNAME %>
   timeout: 5000
 
 development:
