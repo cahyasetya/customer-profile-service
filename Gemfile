@@ -9,6 +9,7 @@ gem 'puma', '>= 5.0'
 
 gem 'pg'
 gem 'mongo'
+gem 'figaro'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
